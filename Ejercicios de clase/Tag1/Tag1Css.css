@@ -1,0 +1,29 @@
+/*comentario */
+
+h1 {
+    color: rgb(197, 21, 109);
+    text-align: match-parent;
+  }
+
+
+  a[href^="https"]::before {
+    content: "🔗 ";
+  }
+
+ /*body {
+    background-color: lightblue;
+  }*/
+
+  p {
+    font-family: verdana;
+    font-size: 30px;
+  }
+
+  p2 {
+    margin: 1000px 0;
+    border: 2px solid rgb(216, 71, 71);
+}
+
+[lang="fr"]::before {
+    content: url('/media/examples/french-flag.png');
+}
