@@ -1,0 +1,109 @@
+/* Common */
+* { box-sizing: border-box;}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lighgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reproductor */
+.player {
+    min-width: 150px;
+    background-image: linear-gradient(black, rgb(45, 189, 26));
+    border-radius: 0.5rem;
+    padding: 2rem;
+    color: rgb(233, 233, 233);
+    box-shadow: 2px 2px 3px black;
+}
+
+
+/* Titulo */
+.title {
+    margin-top: 100;
+    text-align:center; /*Posición del titulo*/
+    display:flexbox; 
+    color: rgb(255, 255, 255);
+}
+/*Descripción cancion*/
+.descripcion {
+    margin-top: 0;
+    text-align:center; /*Posición del titulo*/
+    display:flexbox;
+}
+
+/*Enlace canción*/
+/*.enlace {
+    margin-top: 0;
+    text-align:center; /*Posición del titulo
+    display:flexbox;
+    color: blanchedalmond;
+    text-decoration: none;
+}*/
+
+/* miniatura */
+.cover {
+    width: 200px;
+    height:auto;    /*Auto*/
+    border-radius: .3rem;
+    display:block;   /*block*/   /* Display: Flexbox; para mover a la izquierda */
+    margin: 0 auto 1rem auto;
+}
+
+/* Barra de reproducción */
+.progress-container {
+    height: .6rem;
+    background-color: rgb(116, 114, 114);
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background-color: rgb(255, 255, 255);
+    width: 0;
+    height: 100%;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+}
+
+.controls i {
+    font-size: 1.7rem;
+    color: white;
+}
+
+/* canciones */
+.songs {
+    margin: 0;
+    padding: 0;
+    list-style: none;            /*Subrayado canciones*/
+}
+
+.songs li {                    /*Separación de canciones*/
+    margin-bottom: 1rem;
+}
+
+.songs a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+
+.songs a.active {
+    color: white;
+    font-weight: bold;
+}
